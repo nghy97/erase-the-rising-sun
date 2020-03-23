@@ -1,1 +1,164 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/erasing-rising-sun-flag-campaign/favicon.ico><title>erasing-rising-sun-flag-campaign</title><link href=/erasing-rising-sun-flag-campaign/js/app.d6e3a66d.js rel=preload as=script><link href=/erasing-rising-sun-flag-campaign/js/chunk-vendors.37632507.js rel=preload as=script></head><body><noscript><strong>We're sorry but erasing-rising-sun-flag-campaign doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/erasing-rising-sun-flag-campaign/js/chunk-vendors.37632507.js></script><script src=/erasing-rising-sun-flag-campaign/js/app.d6e3a66d.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erase rising flag campaign</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <img
+      id="rising-sun-flag"
+      class="img-fluid"
+      src="./images/rising_sun_flag.png"
+      alt="욱일기"
+    />
+    <div
+      id="alert-eraser-information"
+      class="alert alert-light center w-75 text-center"
+      role="alert"
+    >
+      <div class="mb-2">
+        <svg
+          class="bi bi-exclamation-triangle-fill"
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 00-.9.995l.35 3.507a.552.552 0 001.1 0l.35-3.507A.905.905 0 008 5zm.002 6a1 1 0 100 2 1 1 0 000-2z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      당신의 손으로 <br />
+      욱일기를 하얗게 지워주세요
+    </div>
+    <div class="dimmed"></div>
+
+    <div id="text-after-erasing-rising-sun" style="display: none;">
+      <main role="main" class="inner cover center text-center w-75">
+        <p class="lead text-dark" style="font-size: 1.25rem;">
+          감사합니다
+        </p>
+        <p class="lead text-dark" style="font-size: 1.25rem;">
+          도쿄올림픽에서 욱일기가
+          <br />
+          깨끗이 지워졌습니다
+        </p>
+      </main>
+    </div>
+
+    <div id="abe-with-flag" style="display: none;">
+      <img class="img-fluid" src="./images/flags.png" alt="flags" />
+      <img class="img-fluid" src="./images/abe.gif" alt="아베" />
+    </div>
+
+    <div
+      id="contents"
+      class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3"
+      style="display: none;"
+    >
+      <div class="paragraph mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
+        <div class="my-3 py-3">
+          <h1 class="display-5 mb-3">캠페인 목적</h1>
+          <p class="lead">
+            안녕하세요 ‘적기 내려, 백기 올려’ 캠페인을 진행한 ‘은은한 결’입니다
+          </p>
+          <p class="lead">
+            다가오는 2020 도쿄올림픽에서 일본 제국주의의 상징인 욱일기가 사용
+            허용되었습니다
+          </p>
+          <p class="lead">
+            캠페인을 통해 올림픽에서 욱일기가 사라져야 한다는 사실을 많은
+            사람에게 알리고자 합니다
+          </p>
+        </div>
+        <div class="mx-auto text-center">
+          <img
+            class="img-fluid card-image"
+            src="./images/campaign_purpose.png"
+            alt="캠페인 목적"
+          />
+        </div>
+      </div>
+      <div class="paragraph mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
+        <div class="my-3 py-3">
+          <h1 class="display-5 mb-3">캠페인 아이디어</h1>
+          <p class="lead">
+            우리의 아이디어는 ‘백기’입니다
+          </p>
+          <p class="lead">
+            ‘도쿄올림픽에서 욱일기가 백기가 되어 휘날리면 어떨까’ 라는 재미있는
+            상상을 했습니다
+          </p>
+          <p class="lead">
+            여러분의 손으로 직접 욱일기를 백기로 만들고 욱일기를 드는 것은
+            백기를 드는 것과 같다는 점을 기억해주세요
+          </p>
+        </div>
+        <div class="mx-auto text-center">
+          <img
+            class="img-fluid card-image"
+            src="./images/campaign_idea.png"
+            alt="캠페인 아이디어"
+          />
+        </div>
+      </div>
+      <div
+        class="paragraph mr-md-mb-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <h1 class="display-5 mb-3">캠페인 기대효과</h1>
+          <p class="lead">
+            ‘적기 내려, 백기 올려’ 캠페인을 통해 ‘도쿄 올림픽에서 욱일기 사용
+            반대’ 서명운동에 동참하길 기대합니다
+          </p>
+          <p class="lead">
+            여러분의 참여 하나가 잘못된 역사를 바로잡을 수 있습니다. 감사합니다
+          </p>
+        </div>
+        <div class="mx-auto text-center">
+          <img
+            class="img-fluid card-image"
+            src="./images/campaign_effect.png"
+            alt="캠페인 효과"
+          />
+        </div>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+          <div class="text-center rcol-md-5 p-lg-5 mx-auto my-2 paragraph">
+            <a
+              class="btn btn-outline-dark"
+              href="https://secure.avaaz.org/kr/community_petitions/gugje_olrimpig_wiweonhoe_jeoggi_naeryeo_baeggi_olryeo_in_dokyoolrimpig/details/"
+              target="_blank"
+              >청원하러 가기</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fireworks" class="center" style="display: none;">
+      <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery-eraser.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
