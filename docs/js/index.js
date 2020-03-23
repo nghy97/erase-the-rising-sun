@@ -26,7 +26,3 @@ $(window).scroll(() => {
     }
   });
 });
-
-$('#go-petition').click(() => {
-  window.open('about: blank').location.href = '?';
-});
