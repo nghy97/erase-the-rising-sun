@@ -4,7 +4,7 @@ $('#rising-sun-flag').eraser({
   completeFunction() {
     $('#rising-sun-flag').fadeOut(1500, () => {
       $('#text-after-erasing-rising-sun, #fireworks').fadeIn(500, () => {
-        $('#text-after-erasing-rising-sun, #fireworks').fadeOut(3000, () => {
+        $('#text-after-erasing-rising-sun, #fireworks').fadeOut(5000, () => {
           $('#abe-with-flag, #contents').fadeIn(500);
         });
       });
