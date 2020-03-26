@@ -15,14 +15,3 @@ $('#rising-sun-flag').eraser({
 setTimeout(() => {
   $('#alert-eraser-information, .dimmed').fadeOut(500);
 }, 2000);
-
-$(window).scroll(() => {
-  $('.paragraph').each(function() {
-    const perParagraphHeight = $(this).offset().top + $(this).outerHeight();
-    const windowHeight = $(window).scrollTop() + $(window).height() + 400;
-
-    if (windowHeight > perParagraphHeight) {
-      $(this).animate({ opacity: '1' }, 500);
-    }
-  });
-});
